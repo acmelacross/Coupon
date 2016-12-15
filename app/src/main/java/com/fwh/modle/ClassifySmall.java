@@ -3,9 +3,11 @@ package com.fwh.modle;
 import cn.bmob.v3.BmobObject;
 
 /**
- * Created by coding on 2016/12/14.
+ * 作者--> coding  on 2016/12/16.
+ * com.fwh.modle
+ * 邮箱--> www14159@163.com
+ * Created by coding on 2016/12/16.
  */
-
 public class ClassifySmall extends BmobObject {
 
     private ClassifyBig classifyType;
@@ -27,4 +29,14 @@ public class ClassifySmall extends BmobObject {
     public void setClassifyName(String classifyName) {
         this.classifyName = classifyName;
     }
+
+    public String getClassifyImg() {
+        return classifyImg;
+    }
+
+    public void setClassifyImg(String classifyImg) {
+        this.classifyImg = classifyImg;
+    }
+
+    private String classifyImg;
 }

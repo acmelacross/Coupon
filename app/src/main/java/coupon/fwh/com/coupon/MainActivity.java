@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.fwh.modle.ClassifyBig;
 import com.fwh.modle.ClassifySmall;
+import com.fwh.modle.Goods;
 import com.fwh.modle.Person;
 
 import cn.bmob.v3.Bmob;
@@ -38,8 +39,12 @@ public class MainActivity extends AppCompatActivity {
         big.setClassifyName("家用电器");
         ClassifySmall small = new ClassifySmall();
         small.setClassifyType(big);
-        small.setClassifyName("彩电影音");
-        small.save(new SaveListener<String>() {
+        //small.setClassifyName("彩电影音");
+        small.setObjectId("014a111575");
+        Goods good = new Goods();
+        good.setGoodName("测试");
+        good.setGoodType(small);
+        good.save(new SaveListener<String>() {
             @Override
             public void done(String objectId,BmobException e) {
                 if(e==null){
