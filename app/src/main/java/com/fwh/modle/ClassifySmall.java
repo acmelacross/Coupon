@@ -7,6 +7,7 @@ import cn.bmob.v3.BmobObject;
  */
 
 public class ClassifySmall extends BmobObject {
+
     private ClassifyBig classifyType;
 
     public ClassifyBig getClassifyType() {

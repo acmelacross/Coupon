@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 //                    System.out.print("失败 ");
 //                }
 //            }
-//        });
+//        });123123
 
         ClassifyBig big = new ClassifyBig();
         big.setObjectId("5541c44013");
