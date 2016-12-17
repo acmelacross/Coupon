@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Coupon</string>
+    <string name="main_shouye">首页</string>
+    <string name="main_shipin">视频</string>
+    <string name="main_dongtai">动态</string>
+    <string name="main_wo">我</string>
 </resources>
