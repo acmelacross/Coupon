@@ -25,9 +25,15 @@ import org.xutils.BuildConfig;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
+import java.util.HashMap;
+
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
+import cn.smssdk.EventHandler;
+import cn.smssdk.SMSSDK;
+import cn.smssdk.gui.RegisterPage;
+
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fm;
@@ -81,7 +87,27 @@ public class MainActivity extends AppCompatActivity {
 
         fm = getSupportFragmentManager();
         initBottomBar();
-        startActivity(new Intent().setClass(MainActivity.this, ShopInfoActivity.class));
+
+
+        //startActivity(new Intent().setClass(MainActivity.this, ShopInfoActivity.class));
+
+        //打开注册页面
+        RegisterPage registerPage = new RegisterPage();
+        registerPage.setRegisterCallback(new EventHandler() {
+            public void afterEvent(int event, int result, Object data) {
+// 解析注册结果
+                if (result == SMSSDK.RESULT_COMPLETE) {
+                    @SuppressWarnings("unchecked")
+                    HashMap<String,Object> phoneMap = (HashMap<String, Object>) data;
+                    String country = (String) phoneMap.get("country");
+                    String phone = (String) phoneMap.get("phone");
+
+// 提交用户信息（此方法可以不调用）
+                   // registerUser(country, phone);
+                }
+            }
+        });
+        registerPage.show(MainActivity.this);
     }
 
     private void initBottomBar()
@@ -212,6 +238,7 @@ public class MainActivity extends AppCompatActivity {
         x.Ext.setDebug(BuildConfig.DEBUG);//是否输出debug日志，开启debug会影响性能.
         Fresco.initialize(this);
         Bmob.initialize(this, "2fac321bf36ec6b6b9174ad8a47d3eb5");
+        SMSSDK.initSDK(this, "1a11b3c35fbf5", "060a140f3351e80afced49ebd70ee485");
     }
 
 }
