@@ -1,5 +1,6 @@
 package coupon.fwh.com.coupon;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -17,6 +18,7 @@ import com.fwh.modle.ClassifySmall;
 import com.fwh.modle.Goods;
 import com.fwh.modle.Person;
 import  com.fwh.main.fragment.FragmentOne;
+import com.fwh.view.activity.ShopInfoActivity;
 
 import org.xutils.*;
 import org.xutils.BuildConfig;
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         fm = getSupportFragmentManager();
         initBottomBar();
+        startActivity(new Intent().setClass(MainActivity.this, ShopInfoActivity.class));
     }
 
     private void initBottomBar()
