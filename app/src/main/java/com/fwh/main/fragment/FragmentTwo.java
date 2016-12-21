@@ -47,7 +47,7 @@ public class FragmentTwo extends BaseFragment
     @Override
     public int getLayoutId()
     {
-        return R.layout.fragment_main_classify;
+        return R.layout.fragment_main2_classify;
     }
 
     @Override

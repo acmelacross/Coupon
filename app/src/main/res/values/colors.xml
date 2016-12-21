@@ -31,6 +31,7 @@
     <color name="goldyellow">#ff9428</color>
     <!-- listview 选中颜色 -->
     <color name="red">#ff0000</color>
+    <color name="red_mogu">#ff5777</color>
     <color name="list_yellow">#ffff99</color>
     <color name="black_font">#3f3c33</color>
 

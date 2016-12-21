@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="52.5dp"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:background="@color/red_mogu"
+            android:layout_alignParentTop="true"
+            >
+
+        <TextView
+            android:id="@+id/tvBusSearchInfo"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="个人中心"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="18.5sp"
+
+            />
+        <Button
+            android:id="@+id/iv_busline_map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        </RelativeLayout>
+
+</RelativeLayout>

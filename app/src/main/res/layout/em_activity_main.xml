@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn_container_conversation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+                 android:onClick="onTabClicked"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_conversation"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home_tab_one"
+                android:onClick="onTabClicked"
+                android:scaleType="matrix"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/em_main_botton_text_color"
+                android:textSize="12sp" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/em_main_botton_text_color"
+        android:text="主页"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+     />
+         
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_address_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:onClick="onTabClicked"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_address_list"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home_tab_two"
+                android:onClick="onTabClicked"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="matrix"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/unread_address_number"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="27dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/em_unread_count_bg"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/em_main_botton_text_color"
+                android:text="买买买"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_setting"
+            android:layout_width="0dp"
+          android:layout_height="match_parent"
+             android:onClick="onTabClicked"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home_tab_three"
+                android:onClick="onTabClicked"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="matrix"
+                android:textSize="12sp" />
+               <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23.5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/em_unread_count_bg"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/em_main_botton_text_color"
+                android:text="购物车"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+     android:id="@+id/btn_container_my"
+     android:layout_width="0dp"
+     android:layout_height="match_parent"
+      android:paddingLeft="25dp"
+         android:paddingRight="25dp"
+          android:onClick="onTabClicked"
+     android:layout_weight="1" >
+
+     <Button
+         android:id="@+id/btn_my"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:background="@drawable/home_tab_four"
+         android:onClick="onTabClicked"
+         android:layout_marginTop="3dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:scaleType="matrix"
+         android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/em_main_botton_text_color"
+                android:text="我的"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true"
+                />
+ </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+<View
+         android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        />
+
+
+
+</RelativeLayout>

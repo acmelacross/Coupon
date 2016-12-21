@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+    android:background="@drawable/test2">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ft_mine_simple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        fresco:roundAsCircle="true"
+    android:background="@drawable/default_avatar"
+        fresco:failureImage="@mipmap/ic_launcher"
+        fresco:progressBarImage="@mipmap/ic_launcher"
+
+        fresco:roundingBorderWidth="3dp"
+        fresco:roundingBorderColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="葫芦娃的爷爷"/>
+
+</RelativeLayout>
