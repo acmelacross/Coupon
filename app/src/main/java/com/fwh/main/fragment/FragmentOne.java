@@ -25,7 +25,7 @@ public class FragmentOne extends BaseFragment
     public int getLayoutId()
     {
 
-        return R.layout.fragment_main1_index_xml;
+        return R.layout.fragment_main1_index;
     }
 
     @Override
