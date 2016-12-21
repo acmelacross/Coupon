@@ -24,7 +24,7 @@ import org.xutils.view.annotation.ContentView;
 import cn.bmob.v3.Bmob;
 import cn.smssdk.SMSSDK;
 
-@ContentView(R.layout.em_activity_main)
+@ContentView(R.layout.activity_main)
 public class MainActivity extends FragmentActivity {
     private FragmentManager fm;
     private FragmentOne fragmentOne;
@@ -43,13 +43,12 @@ public class MainActivity extends FragmentActivity {
 
 
 
-
 //  @ViewInject(R.id.main_bottomBar)
 //  BottomNavigationBar mMainBottomBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.em_activity_main);
+
         x.view().inject(this);
         initSDK();
 
