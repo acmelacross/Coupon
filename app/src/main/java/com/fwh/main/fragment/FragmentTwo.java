@@ -1,5 +1,6 @@
 package com.fwh.main.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AbsListView;
@@ -9,9 +10,11 @@ import android.widget.ListView;
 import com.fwh.main.fragment.two.LeftListAdapter;
 import com.fwh.main.fragment.two.PinnedHeaderListView;
 import com.fwh.main.fragment.two.RightSectionedAdapter;
+import com.fwh.view.activity.BuyActivity;
 
 import org.xutils.view.annotation.ViewInject;
 
+import coupon.fwh.com.coupon.MainActivity;
 import coupon.fwh.com.coupon.R;
 
 
@@ -97,6 +100,7 @@ public class FragmentTwo extends BaseFragment
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 System.out.println("aaaaaa   " + i);
+                startActivity(new Intent().setClass(getActivity(), BuyActivity.class));
 
             }
         });

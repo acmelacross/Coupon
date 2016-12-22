@@ -66,7 +66,7 @@ public class LeftListAdapter extends BaseAdapter {
             if (flagArray[position]) {
                 left_list_item.setBackgroundColor(Color.rgb(255, 255, 255));
             } else {
-                left_list_item.setBackgroundColor(Color.TRANSPARENT);
+                left_list_item.setBackgroundResource(R.color.gray_line);
             }
         }
 

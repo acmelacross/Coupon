@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdvShopImgs"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            fresco:roundAsCircle="false"
+            android:background="@drawable/pic"
+            fresco:roundingBorderWidth="3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            />
+
+        <TextView
+            android:id="@+id/tvShopName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:text="买二送一澳洲原装进口GM绵羊油"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvShopInfo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="60年金品品牌,天然抗菌,舒适健康,柔软亲肤,排湿吸汗,月销过万,好评如潮"
+            android:textColor="@color/gray_line" />
+        <TextView
+            android:id="@+id/tvShopPrice"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:text="券后仅需[69]包邮"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

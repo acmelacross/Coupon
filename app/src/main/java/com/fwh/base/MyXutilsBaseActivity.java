@@ -1,5 +1,6 @@
 package com.fwh.base;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,9 +14,9 @@ import org.xutils.x;
  * Created by coding on 2016/12/19.
  */
 
-public class MyXutilsBaseActivity extends AppCompatActivity {
+public class MyXutilsBaseActivity extends Activity {
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
     }

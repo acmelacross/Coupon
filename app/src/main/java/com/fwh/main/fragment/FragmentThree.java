@@ -20,7 +20,7 @@ public class FragmentThree extends BaseFragment
     @Override
     public int getLayoutId()
     {
-        return R.layout.fragment_main1_index;
+        return R.layout.fragment_main3_index;
     }
 
     @Override

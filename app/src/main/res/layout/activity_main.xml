@@ -23,24 +23,27 @@
 
             <Button
                 android:id="@+id/btn_conversation"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
                 android:background="@drawable/home_tab_one"
                 android:onClick="onTabClicked"
                 android:scaleType="matrix"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="6dp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
                 android:textColor="@color/em_main_botton_text_color"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:layout_alignLeft="@+id/tvActivityMainTab1"
+                android:layout_alignStart="@+id/tvActivityMainTab1" />
     <TextView
+        android:id="@+id/tvActivityMainTab1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textColor="@color/em_main_botton_text_color"
         android:text="主页"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="4dp"
         android:layout_centerHorizontal="true"
+        android:textSize="6pt"
      />
          
         </RelativeLayout>
@@ -54,11 +57,11 @@
 
             <Button
                 android:id="@+id/btn_address_list"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
                 android:background="@drawable/home_tab_two"
                 android:onClick="onTabClicked"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="6dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:scaleType="matrix"
@@ -74,12 +77,14 @@
                 android:background="@drawable/em_unread_count_bg"
                 android:visibility="gone" />
             <TextView
+                android:id="@+id/tvActivityMainTab2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/em_main_botton_text_color"
                 android:text="买买买"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="6pt"
                 android:layout_centerHorizontal="true"
                 />
         </RelativeLayout>
@@ -93,11 +98,11 @@
 
             <Button
                 android:id="@+id/btn_setting"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
                 android:background="@drawable/home_tab_three"
                 android:onClick="onTabClicked"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="6dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:scaleType="matrix"
@@ -116,13 +121,15 @@
                  />
 
             <TextView
+                android:id="@+id/tvActivityMainTab3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/em_main_botton_text_color"
-                android:text="购物车"
+                android:text="仓库"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="4dp"
                 android:layout_centerHorizontal="true"
+                android:textSize="6pt"
                 />
         </RelativeLayout>
 
@@ -137,24 +144,26 @@
 
      <Button
          android:id="@+id/btn_my"
-         android:layout_width="30dp"
-         android:layout_height="30dp"
+         android:layout_width="23dp"
+         android:layout_height="23dp"
          android:background="@drawable/home_tab_four"
          android:onClick="onTabClicked"
-         android:layout_marginTop="3dp"
+         android:layout_marginTop="6dp"
          android:layout_alignParentTop="true"
          android:layout_centerHorizontal="true"
          android:scaleType="matrix"
          android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/tvActivityMainTab4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/em_main_botton_text_color"
                 android:text="我的"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="4dp"
                 android:layout_centerHorizontal="true"
+                android:textSize="6pt"
                 />
  </RelativeLayout>
     </LinearLayout>

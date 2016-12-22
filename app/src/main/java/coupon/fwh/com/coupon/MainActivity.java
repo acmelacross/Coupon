@@ -1,10 +1,13 @@
 package coupon.fwh.com.coupon;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,10 +19,13 @@ import com.fwh.main.fragment.FragmentFour;
 import com.fwh.main.fragment.FragmentThree;
 import com.fwh.main.fragment.FragmentTwo;
 import  com.fwh.main.fragment.FragmentOne;
+import com.fwh.view.activity.BuyActivity;
+import com.fwh.view.activity.userinfo.CustomerActivity;
 
 import org.xutils.*;
 import org.xutils.BuildConfig;
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.ViewInject;
 
 import cn.bmob.v3.Bmob;
 import cn.smssdk.SMSSDK;
@@ -41,7 +47,14 @@ public class MainActivity extends FragmentActivity {
     // 当前fragment的index
     private int currentTabIndex;
 
-
+    @ViewInject(R.id.tvActivityMainTab1)
+    TextView tvActivityMainTab1;
+    @ViewInject(R.id.tvActivityMainTab2)
+    TextView tvActivityMainTab2;
+    @ViewInject(R.id.tvActivityMainTab3)
+    TextView tvActivityMainTab3;
+    @ViewInject(R.id.tvActivityMainTab4)
+    TextView tvActivityMainTab4;
 
 //  @ViewInject(R.id.main_bottomBar)
 //  BottomNavigationBar mMainBottomBar;
@@ -92,7 +105,7 @@ public class MainActivity extends FragmentActivity {
         initBottomBar();
 
 
-        //startActivity(new Intent().setClass(MainActivity.this, ShopInfoActivity.class));
+       // startActivity(new Intent().setClass(MainActivity.this, CustomerActivity.class));
 
 
 
@@ -126,7 +139,7 @@ public class MainActivity extends FragmentActivity {
 
         // 把第一个tab设为选中状态
         mTabs[0].setSelected(true);
-
+        setTextColor(0);
 
         fragmentOne = new FragmentOne();
         fragmentTwo = new  FragmentTwo();
@@ -260,7 +273,37 @@ public class MainActivity extends FragmentActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
+        setTextColor(index);
+    }
+    private void setTextColor(int index){
+       if (index == 0){
+           //ContextCompat.getColor(context, R.color.color_name) 。
+           tvActivityMainTab1.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.red_mogu) );//R.color.red_mogu
+           tvActivityMainTab2.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+           tvActivityMainTab3.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+           tvActivityMainTab4.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+       }
+        if (index == 1){
+            //ContextCompat.getColor(context, R.color.color_name) 。
+            tvActivityMainTab1.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab2.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.red_mogu) );//R.color.red_mogu
+            tvActivityMainTab3.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab4.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+        }
+        if (index == 2){
+            //ContextCompat.getColor(context, R.color.color_name) 。
+            tvActivityMainTab1.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab2.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab3.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.red_mogu) );//R.color.red_mogu
+            tvActivityMainTab4.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+        }
+        if (index == 3){
+            //ContextCompat.getColor(context, R.color.color_name) 。
+            tvActivityMainTab1.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab2.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab3.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.gray_font) );//R.color.red_mogu
+            tvActivityMainTab4.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.red_mogu) );//R.color.red_mogu
+        }
     }
 
 //    private void showFragment(int position)

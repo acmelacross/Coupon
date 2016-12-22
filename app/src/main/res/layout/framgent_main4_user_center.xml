@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/center_bgg"
+        android:background="@drawable/login_bg_blur"
         >
 
         <com.fwh.base.YLListView

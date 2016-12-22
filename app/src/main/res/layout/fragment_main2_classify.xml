@@ -18,13 +18,17 @@
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:scrollbars="none"
-        android:divider="@null"></ListView>
+        android:divider="@color/black_font"
+        android:dividerHeight="1px"
+        ></ListView>
 
     <com.fwh.main.fragment.two.PinnedHeaderListView
         android:id="@+id/pinnedListView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/dp10"
+        android:divider="@color/gray_font"
+        android:dividerHeight="1px"
         android:layout_weight="5"
         android:background="@android:color/white"></com.fwh.main.fragment.two.PinnedHeaderListView>
     </LinearLayout>

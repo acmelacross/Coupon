@@ -1,11 +1,13 @@
 package com.fwh.main.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -16,12 +18,14 @@ import com.fwh.base.YLListView;
 import com.fwh.modle.Goods;
 import com.fwh.modle.UserInfo;
 import com.fwh.view.activity.ShopInfoActivity;
+import com.fwh.view.activity.userinfo.CustomerActivity;
 
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import coupon.fwh.com.coupon.MainActivity;
 import coupon.fwh.com.coupon.R;
 
 
@@ -131,6 +135,19 @@ private void initAdapter(){
                 }
             }
     );
+    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            switch (i){
+                case 4:
+                    startActivity(new Intent().setClass(getActivity(), CustomerActivity.class));
+                    break;
+                case 5:
+                    startActivity(new Intent().setClass(getActivity(), CustomerActivity.class));
+                    break;
+            }
+        }
+    });
 }
 
 

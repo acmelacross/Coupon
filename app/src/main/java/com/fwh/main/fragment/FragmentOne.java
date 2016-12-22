@@ -18,8 +18,8 @@ import coupon.fwh.com.coupon.R;
 public class FragmentOne extends BaseFragment
 {
 
-    @ViewInject(R.id.ft_mine_simple)
-    SimpleDraweeView ft_mine_simple;
+//    @ViewInject(R.id.ft_mine_simple)
+//    SimpleDraweeView ft_mine_simple;
 
     @Override
     public int getLayoutId()

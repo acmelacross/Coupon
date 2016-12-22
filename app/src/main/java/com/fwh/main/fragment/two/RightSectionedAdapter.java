@@ -63,12 +63,12 @@ public class RightSectionedAdapter extends SectionedBaseAdapter {
             layout = (RelativeLayout) convertView;
         }
         ((TextView) layout.findViewById(R.id.textItem)).setText(rightStr[section][position]);
-        layout.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Toast.makeText(mContext,"--" + rightStr[section][position], Toast.LENGTH_SHORT).show();
-            }
-        });
+//        layout.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//                Toast.makeText(mContext,"--" + rightStr[section][position], Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         return layout;
     }

@@ -39,7 +39,7 @@ public class ShopInfoActivity extends MyXutilsBaseActivity {
         list.add(g);
         list.add(g);
         list.add(g);
-        Toast.makeText(ShopInfoActivity.this,"aaaaaaa",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(ShopInfoActivity.this,"aaaaaaa",Toast.LENGTH_SHORT).show();
         lvShopInfo.setAdapter(
                 mAdapter= new CommonAdapter<Goods>( ShopInfoActivity.this, list, R.layout.l_item_shopinfo) {
                     @Override
