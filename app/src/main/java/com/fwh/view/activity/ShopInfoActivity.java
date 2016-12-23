@@ -34,7 +34,7 @@ public class ShopInfoActivity extends MyXutilsBaseActivity {
         g.setGoodName("买二送一澳洲原装进口GM绵羊油");
         g.setGoodInfo("60年金品品牌,天然抗菌,舒适健康,柔软亲肤,排湿吸汗,月销过万,好评如潮");
         g.setGoodPrice("券后仅需[69]包邮");
-        g.setGoodUrl("http://act.shangpin.com/brand/Activities/20140504SP_MARGARIN/images/img01.jpg");
+        g.setGoodUrl("http://b1.hucdn.com/upload/item/1604/26/43785702548474_800x800.jpg!350x350.jpg");
         list.add(g);
         list.add(g);
         list.add(g);
